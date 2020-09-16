@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BlackCoffer</string>
+
+    <string name="fb_login_protocol_scheme">fb862480247855479</string>
+    <string name="storage_link">https://console.firebase.google.com/project/blackcoffer-ce879/storage/blackcoffer-ce879.appspot.com/files</string>
+    <string name="previous_button">previous button</string>
+
+    <string name="next_button">next button</string>
+
+    <string name="counter_questions">0 out of 100</string>
+
+    <string name="correct_answer">Correct!</string>
+
+    <string name="wrong_answer">Wrong!</string>
+</resources>

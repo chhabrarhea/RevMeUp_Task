@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F3F3F3"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/good_morning_img" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_bold"
+                    android:text="Welcome "
+                    android:textColor="#ffffff"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/advent_pro_bold"
+                    android:text="Back!"
+                    android:textColor="#ffffff"
+                    android:textSize="32sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/colorAccent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="-Lets Get Started-"
+        android:textColor="@color/icon"
+        android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                app:hintTextColor="@color/colorAccent"
+                android:hint="Email"
+                app:boxBackgroundMode="outline"
+                app:errorTextColor="#96ffffff"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/signEmailLayout">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawableTint="@color/icon"
+                    android:drawablePadding="5dp"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:inputType="textWebEmailAddress"
+                    android:id="@+id/signEmail"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    tools:ignore="PrivateResource" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:inputType="textPassword"
+                android:id="@+id/signPasswordLayout"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/icon"
+                android:hint="Password"
+                android:layout_marginBottom="10dp"
+                tools:ignore="PrivateResource">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawableTint="@color/icon"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:id="@+id/signPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    tools:ignore="PrivateResource" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/custom_button"
+                    android:fontFamily="@font/poppins"
+                    android:text="Sign in"
+                    android:layout_marginVertical="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="false"
+                    android:onClick="checkLogin"
+                    android:textColor="@color/icon"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+

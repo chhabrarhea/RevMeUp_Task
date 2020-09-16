@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        app:title="Profile"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="20dp">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:tint="@color/colorPrimary"
+          android:src="@drawable/ic_baseline_person_24"
+          android:id="@+id/dp"
+          app:civ_border_width="1sp"
+          app:civ_border_color="@color/colorPrimary"
+          android:scaleType="centerCrop"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand Name"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/username"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle"
+        android:layout_below="@id/linear"
+        android:background="#F3F3F3"
+        android:layout_marginHorizontal="10dp"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorAccent"
+        android:layout_margin="8dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activity_fullscreen_photo_fab_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            android:onClick="postQuiz"
+            android:src="@drawable/ic_baseline_question_answer_24"
+            app:fab_colorNormal="@color/design_default_color_secondary_variant"
+            app:fab_label="Quiz"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activity_fullscreen_photo_fab_set_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="postImage"
+            app:fab_size="mini"
+            android:src="@drawable/ic_baseline_image_24"
+            app:fab_colorNormal="@color/design_default_color_secondary_variant"
+            app:fab_label="Ad"
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

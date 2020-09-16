@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "324540265461",
+    "firebase_url": "https://blackcoffer-ce879.firebaseio.com",
+    "project_id": "blackcoffer-ce879",
+    "storage_bucket": "blackcoffer-ce879.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324540265461:android:1f9f69f35c33cc7b3966bc",
+        "android_client_info": {
+          "package_name": "com.example.blackcoffer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324540265461-0dk3f4scaopn1at3vcbmsq40jjvfuqrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blackcoffer",
+            "certificate_hash": "1b2abed6b521b763469b4b0733ba0a947fcfa529"
+          }
+        },
+        {
+          "client_id": "324540265461-abelv1bk1ej7po6h5i2rkliu6nh71bt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuuT_5V7_WpAd_D50c0dSKr_FOQAKXitk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324540265461-abelv1bk1ej7po6h5i2rkliu6nh71bt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
